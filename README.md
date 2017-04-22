@@ -7,3 +7,8 @@ https://github.com/Oliyy - Pretty much all the rest I made, in consultation with
 https://github.com/jakeoid - I used his light theme restriction code
 https://github.com/Vap0r1ze - I edited his repo for adding nitro tags to users names.
 https://github.com/AlexFlipnote - I used the scroll bar from his discord theme, because I hate coding scroll bars
+
+Guild Sidebar Mention Legend -
+RED CIRCLE = UNREAD MESSAGES
+PURPLE SQUARE = UNREAD MESSAGES IN SELECTED GUILD
+PURPLE CIRCLE WITH NUMBER = @ MENTION
