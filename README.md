@@ -25,3 +25,6 @@ PURPLE CIRCLE WITH NUMBER = @ MENTION
 
 ### @import Compatible Link -
 [https://cdn.rawgit.com/Oliyy/Material-Design-Discord/cc6df901/theme.css](https://cdn.rawgit.com/Oliyy/Material-Design-Discord/cc6df901/theme.css)
+
+### Preview -
+![alt preview](http://i.imgur.com/DENsmXg.png)
