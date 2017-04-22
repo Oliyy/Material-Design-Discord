@@ -212,6 +212,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#imcu
 .theme-dark .channel-members {
   background-color: var(--darkprimary);
   width: 10px;
+  !important;
 }
 
 
@@ -504,7 +505,6 @@ If anyone has a problem with me using their code just PM me on discord Oliy#imcu
 
 .guild-channels .channel-text:hover.channel-muted:before, .guild-channels .channel-text:hover:not(.unread):before {
   border: none;
-  !important
 }
 
 .guild-channels .channel .channel-name {}
