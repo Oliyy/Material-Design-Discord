@@ -28,8 +28,15 @@ PURPLE CIRCLE WITH NUMBER = @ MENTION
 
 ### Know Issues -
 Private Messaging is borked
+
 User popout live on twitch is not aligned
+
 Other small issues
+
+Voice Controls are borked if you have a long name
+
+![alt preview](http://i.imgur.com/x1OsSq5.png)
+
 
 ### Preview -
 ![alt preview](http://i.imgur.com/oSSjiVx.png)
