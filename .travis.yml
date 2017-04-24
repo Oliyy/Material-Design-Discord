@@ -1,6 +1,11 @@
-language: css
-rvm:
+language: go
 
+go:
+  - 1.7
+  
+sudo: false
 
-# uncomment and edit the following line if your project needs to run something other than `rake`:
-# script: bundle exec rspec spec
+install:
+  - go get github.com/russross/blackfriday
+  - go get github.com/PuerkitoBio/goquery
+  - go get github.com/aymerick/douceur
