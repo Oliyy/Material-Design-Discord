@@ -27,7 +27,6 @@ PURPLE CIRCLE WITH NUMBER = @ MENTION
 [https://cdn.rawgit.com/Oliyy/Material-Design-Discord/cc6df901/theme.css](https://cdn.rawgit.com/Oliyy/Material-Design-Discord/cc6df901/theme.css)
 
 ### Known Issues -
-Private Messaging is borked
 
 User popout live on twitch is not aligned
 

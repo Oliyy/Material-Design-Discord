@@ -17,7 +17,7 @@ https://github.com/jakeoid - I used his light theme restriction code
 https://github.com/Vap0r1ze - I edited his repo for adding nitro tags to users names.
 https://github.com/AlexFlipnote - I used the scroll bar from his discord theme, because I hate coding scroll bars
 
-If anyone has a problem with me using their code just PM me on discord Oliy#imcurrentlychangingmydiscrimfrequentlysowhenifindagoodoneiwillupdatethis
+If anyone has a problem with me using their code just PM me on discord Oliy#0330
 */
 
 
@@ -42,6 +42,16 @@ If anyone has a problem with me using their code just PM me on discord Oliy#imcu
 
 * {
   font-family: 'Roboto', sans-serif;
+
+}
+
+@keyframes bg-color {
+    0%   { background-color: #e74c3c; }
+    20%  { background-color: #f1c40f; }
+    40%  { background-color: #1abc9c; }
+    60%  { background-color: #3498db; }
+    80%  { background-color: #9b59b6; }
+    100% { background-color: #e74c3c; };
 }
 
 
@@ -218,6 +228,13 @@ If anyone has a problem with me using their code just PM me on discord Oliy#imcu
 .theme-dark .chat .title-wrap {
   background-color: var(--darksecondary);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border: none;
+}
+
+.search-bar {
+  background-color: var(--darksecondary);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0%;
 }
 
 
@@ -804,9 +821,9 @@ If anyone has a problem with me using their code just PM me on discord Oliy#imcu
 /* === SQUARE LARGE AVATARS === */
 
 .avatar-large {
-  width: 60px;
-  height: 60px;
-  background-size: 60px 60px;
+  width: 70px;
+  height: 70px;
+  background-size: 70px 70px;
   border-radius: 0px;
   border-radius: 20%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -818,9 +835,9 @@ If anyone has a problem with me using their code just PM me on discord Oliy#imcu
 }
 
 .avatar-small {
-  width: 50px;
-  height: 50px;
-  background-size: 50px 50px;
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
   border-radius: 20%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
