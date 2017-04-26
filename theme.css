@@ -42,16 +42,28 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 
 * {
   font-family: 'Roboto', sans-serif;
-
 }
 
 @keyframes bg-color {
-    0%   { background-color: #e74c3c; }
-    20%  { background-color: #f1c40f; }
-    40%  { background-color: #1abc9c; }
-    60%  { background-color: #3498db; }
-    80%  { background-color: #9b59b6; }
-    100% { background-color: #e74c3c; };
+  0% {
+    background-color: #e74c3c;
+  }
+  20% {
+    background-color: #f1c40f;
+  }
+  40% {
+    background-color: #1abc9c;
+  }
+  60% {
+    background-color: #3498db;
+  }
+  80% {
+    background-color: #9b59b6;
+  }
+  100% {
+    background-color: #e74c3c;
+  }
+  ;
 }
 
 
@@ -243,7 +255,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 }
 
 .private-channels .channel:active, .guild-channels .channel-text:active, .channel-members .member.popout-open, .private-channels .channel.selected, .guild-channels .channel-text.selected {
-  background: #181818!important;
+  background: var(--darksecondary)!important;
   transition: all 0ms
 }
 
@@ -263,6 +275,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   -ms-transform: translate(5px);
   transform: translate(5px);
 }
+
 .channel-members .member.popout-open .avatar-small, .channel-members .member:hover .avatar-small {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -284,6 +297,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 .channel-members {
   width: 10px !important;
 }
+
 
 /* === TITLE BAR === */
 
@@ -377,7 +391,6 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   zoom: 1.3;
   transition: transform 300ms ease;
 }
-
 
 .account .btn-group {
   border-style: solid;
@@ -496,6 +509,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   border-bottom: 1px solid #fff;
   border-radius: 0;
 }
+
 
 /* === USER PROFILE === */
 
@@ -677,13 +691,102 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   background: var(--darksecondary);
 }
 
+
 /* === GUILD SELECTION BAR === */
+
+.guilds-wrapper .guilds .guild .guild-inner a {
+  border-radius: 20%!important;
+}
+
+.guilds-wrapper .guilds .guild .guild-inner {
+  border-radius: 0%!important;
+}
+
+.guilds-wrapper .guilds .guild {
+  padding: 7px 14px;
+  -ms-transform: translate(-13px)!important;
+  transform: translate(-13px)!important;
+  margin-bottom: 0px!important;
+
+}
+
+.guilds .guild:not(.guilds-add):last-of-type {
+    margin-bottom: 60px!important
+}
+
+#user-profile-modal .guilds .guild:not(.guilds-add):last-of-type {
+    margin-bottom: 0px!important
+}
+
+.dms .guild:not(.guilds-add):last-of-type {
+    margin-bottom: 0px!important
+}
+
+.guilds-wrapper .guild.guilds-add {
+    border: 0px;
+    background: transparent;
+    transition: all 200ms ease!important;
+    margin-left: 0px!important;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0px!important;
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+    color: transparent;
+    height: 70px;
+    width: 80px;
+    padding: 0;
+    
+}
+
+.guilds-wrapper .guild.guilds-add:after {
+    background-color: var(--accent);
+    transition: all 200ms ease!important;
+    position: absolute;
+    left: 8px;
+    bottom: 20px;
+
+    content: "";
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDEzaC02djZoLTJ2LTZINXYtMmg2VjVoMnY2aDZ2MnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+}
+
+.guilds-wrapper .guild.guilds-add:hover:after {
+
+    background-color: var(--accent);
+}
+
+.guilds-wrapper .guilds .guild.guilds-add:hover {
+    opacity: 1!important
+}
+
+.guilds-wrapper .guild.guilds-add:before {
+    content: "";
+    width: 78px;
+    height: 120px;
+    background: #fff;
+    display: block;
+    position: fixed;
+    left: 0px;
+    bottom: -16px;
+
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48, 48, 48, 0)), color-stop(60%, rgba(48, 48, 48, 1)), color-stop(100%, rgba(48, 48, 48, 1)));
+    background: linear-gradient(to bottom, rgba(48, 48, 48, 0) 0%, rgba(48, 48, 48, 1) 60%, rgba(48, 48, 48, 1) 100%);
+    pointer-events: none;
+}
 
 .guilds-wrapper {
   background: var(--darksecondary);
 }
 
-.guilds-wrapper .guild.guilds-add:after, .guilds-wrapper .guild.guilds-add:hover:after, .guilds-wrapper .guilds .guild a:hover, .guilds-wrapper .guilds .guild.selected .guild-inner, .guilds-wrapper .guilds .guild.active .guild-inner {
+.guilds-wrapper , .guilds-wrapper, .guilds-wrapper .guilds .guild a:hover, .guilds-wrapper .guilds .guild.selected .guild-inner, .guilds-wrapper .guilds .guild.active .guild-inner {
   background-color: transparent !important;
 }
 
@@ -699,22 +802,17 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   display: none;
 }
 
-.guilds-wrapper .guild.guilds-add {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: var(--darkprimary);
-  color: var(--accent);
-  border: 1px dashed var(--accent);
-  padding: 0;
-  font-size: 40px;
-  font-weight: 200;
-  text-align: center;
-  -webkit-transition: border-color .25s ease, color .25s ease;
-  transition: border-color .25s ease, color .25s ease;
-  position: relative !important;
-  left: 0px !important;
-  top: 4px;
+.friends-icon {
+    background-image: url(https://bearddesign.s-ul.eu/Dr2CyE1L.svg)!important;
+    opacity: 0.8;
+    margin-top: 4px;
+    background-size: 50%!important
+
+
+}
+
+.guild-channels .icon-instant-invite {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTggMTYuMDhjLS43NiAwLTEuNDQuMy0xLjk2Ljc3TDguOTEgMTIuN2MuMDUtLjIzLjA5LS40Ni4wOS0uN3MtLjA0LS40Ny0uMDktLjdsNy4wNS00LjExYy41NC41IDEuMjUuODEgMi4wNC44MSAxLjY2IDAgMy0xLjM0IDMtM3MtMS4zNC0zLTMtMy0zIDEuMzQtMyAzYzAgLjI0LjA0LjQ3LjA5LjdMOC4wNCA5LjgxQzcuNSA5LjMxIDYuNzkgOSA2IDljLTEuNjYgMC0zIDEuMzQtMyAzczEuMzQgMyAzIDNjLjc5IDAgMS41LS4zMSAyLjA0LS44MWw3LjEyIDQuMTZjLS4wNS4yMS0uMDguNDMtLjA4LjY1IDAgMS42MSAxLjMxIDIuOTIgMi45MiAyLjkyIDEuNjEgMCAyLjkyLTEuMzEgMi45Mi0yLjkycy0xLjMxLTIuOTItMi45Mi0yLjkyeiIvPjwvc3ZnPg==);
 }
 
 .guilds-wrapper .guilds .guild-separator {
@@ -733,6 +831,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   top: 30px;
 }
 
+
 /* === NOTIFICATIONS, RED CIRCLE = UNREAD MESSAGES, PURPLE SQUARE = UNREAD MESSAGES IN SELECTED GUILD, PURPLE CIRCLE WITH NUMBER = @MENTION === */
 
 .badge {
@@ -747,19 +846,19 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 
 .guilds-wrapper .guilds .guild.selected:before, .guilds-wrapper .guilds .guild.selected.unread:before, .guilds-wrapper .guilds .guild.unread:before {
   z-index: 100;
-  -webkit-transform: translate(50px, -20px) scale(1.2);
-  transform: translate(16px, 15px) scale(1.2);
+  -webkit-transform: translate(28px, 15px) scale(1.2);
+  transform: translate(28px, 15px) scale(1.2);
   background: var(--accent);
   height: 12px;
   width: 12px;
   margin-top: 0px;
   border-radius: 50%;
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  transition: all 0.3s ease(.25, .8, .25, 1);
 }
 
 .guilds-wrapper .guilds .guild.selected.unread:before {
   visibility: visible !important;
-  transform: translate(40px, -3px) scale(1.2);
+  transform: translate(56px, 3px) scale(1.2);
   border-radius: 0%;
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   background: #5f0faf;
@@ -780,7 +879,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 
 .dms .guild .badge, .guilds .guild.unread .badge, .guilds .guild .badge {
   -webkit-transform: translate(-4px, -34px)!important;
-  transform: translate(-37px, 4px)!important;
+  transform: translate(-10px, -49px)!important;
   z-index: 100;
 }
 
@@ -870,6 +969,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   background: #1A1C1F;
 }
 
+
 /* === NITRO USER TAGS === */
 
 .avatar-large[style*="a_"]+.comment .message.first .body .username-wrapper:after {
@@ -929,6 +1029,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   border-color: var(--accent);
 }
 
+
 /* === SQUARE LARGE AVATARS === */
 
 .avatar-large {
@@ -952,6 +1053,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   border-radius: 20%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
 
 /* === LIGHT THEME DISABLE === */
 
