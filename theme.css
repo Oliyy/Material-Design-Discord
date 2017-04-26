@@ -786,9 +786,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   background: var(--darksecondary);
 }
 
-.guilds-wrapper , .guilds-wrapper, .guilds-wrapper .guilds .guild a:hover, .guilds-wrapper .guilds .guild.selected .guild-inner, .guilds-wrapper .guilds .guild.active .guild-inner {
-  background-color: transparent !important;
-}
+
 
 .guilds-wrapper .guilds .guild.selected {
   background: transparent;
