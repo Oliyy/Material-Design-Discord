@@ -13,10 +13,10 @@ v1.x B is the first version of this theme, there will be errors and unstyled are
 
 + Changed typing animation
 
-= Theme is now released into beta version 1.
++ Theme is now released into beta version 1.
 
 
-### Credits -
+## Credits -
 
 https://github.com/Oliyy - Pretty much all the rest I made, in consultation with others
 
@@ -27,7 +27,7 @@ https://github.com/Vap0r1ze - I edited his repo for adding nitro tags to users n
 https://github.com/AlexFlipnote - I used the scroll bar from his discord theme, because I hate coding scroll bars
 
 
-### Guild Sidebar Mention Legend -
+## Guild Sidebar Mention Legend -
 
 RED CIRCLE = UNREAD MESSAGES
 
@@ -38,7 +38,7 @@ PURPLE CIRCLE WITH NUMBER = @ MENTION
 ### @import Compatible Link -
 [https://cdn.rawgit.com/Oliyy/Material-Design-Discord/cc6df901/theme.css](https://cdn.rawgit.com/Oliyy/Material-Design-Discord/cc6df901/theme.css)
 
-### Known Issues -
+## Known Issues -
 
 User popout live on twitch is not aligned
 
