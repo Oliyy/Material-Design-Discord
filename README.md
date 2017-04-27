@@ -6,6 +6,9 @@ broken and I am unsure about square profile pictures amoungst other things,
 ## Version 1.0 B
 
 v1.x B is the first version of this theme, there will be errors and unstyled areas, a lot more is to come in the future.
+In this version it allows better customisation, setting a few variables at the top of the css for easy editing.
+![alt variables](http://i.imgur.com/i1qhIGY.png)
+
 
 ### Change log
 
