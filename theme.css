@@ -7,6 +7,9 @@ __  __       _            _       _   _____            _               _____  _ 
 |_|  |_|\__,_|\__\___|_|  |_|\__,_|_| |_____/ \___||___/_|\__, |_| |_| |_____/|_|___/\___\___/|_|  \__,_|
                                                           __/ |
                                                          |___/
+
+Current Version: 1.0 B
+
 I call it Material design theme, but it's just extreme box shadow theme, I have not found an good use of the CSS ripple
 animation in discord yet because of how awkward everything is and there are certain things that I am uncertain about
 which I might change in the future.
@@ -32,6 +35,8 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   --darksecondary: #2d2d2d;
   --darkprimary: #222222;
   --accent: #C62828;
+  --mention: #5f0faf;
+  --profilepictureshape: 20%; /* 50% Circle (Default for discord), 20% Rounded Square (Default for theme), 0% Sharp Square  */
 }
 
 
@@ -130,11 +135,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   margin: 0px;
 }
 
-.typing {
-  bottom: 100%;
-  left: 10px;
-  width: auto;
-}
+
 
 .channel-textarea-autocomplete-inner {
   border: 0!important;
@@ -175,16 +176,38 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   background-color: transparent;
 }
 
-.theme-dark .chat form .typing {
-  background-color: #DA3A46;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: 950px;
-  margin-bottom: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  float: right;
+.chat form .typing {
+    background: var(--accent);
+    bottom: 100%;
+    padding-left: 20px;
+    z-index: 0;
+    animation: opacity 300ms ease;
+    -ms-transform-origin: bottom left;
+    transform-origin: bottom left;
+    -ms-transform: scale(1);
+    transform: scale(1);
+    width: auto;
+    padding-right: 20px;
+    padding-top: 0px;
+    border-radius: 5px 5px 0 0;
+    margin-left: 15px;
+    color: #fff;
+    box-shadow: 0 -3px 20px rgba(0, 0, 0, .1);
+    opacity: .95;
+    transition: all 200ms ease!important;
+    overflow-y: visible!important
+}
+
+.typing .text {
+    line-height: 26px
+}
+
+.typing .ellipsis {
+    height: 31px
+}
+
+.chat form .typing:hover {
+    opacity: 1;
 }
 
 .theme-dark .chat form {
@@ -307,11 +330,16 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   border: none;
 }
 
+.messages-wrapper .new-messages-bar {
+  background-color: var(--accent);
+}
+
 .search-bar {
   background-color: var(--darksecondary);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-radius: 0%;
 }
+
 
 
 /* === PRIVATE MESSAGING === */
@@ -695,11 +723,11 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 /* === GUILD SELECTION BAR === */
 
 .guilds-wrapper .guilds .guild .guild-inner a {
-  border-radius: 20%!important;
+  border-radius: var(--profilepictureshape);
 }
 
 .guilds-wrapper .guilds .guild .guild-inner {
-  border-radius: 0%!important;
+  border-radius: var(--profilepictureshape)!important;
 }
 
 .guilds-wrapper .guilds .guild {
@@ -754,7 +782,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
     background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE5IDEzaC02djZoLTJ2LTZINXYtMmg2VjVoMnY2aDZ2MnoiLz4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);
     background-position: 50%;
     background-repeat: no-repeat;
-    border-radius: 50%;
+    border-radius: var(--profilepictureshape);
 
 }
 
@@ -833,12 +861,12 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 /* === NOTIFICATIONS, RED CIRCLE = UNREAD MESSAGES, PURPLE SQUARE = UNREAD MESSAGES IN SELECTED GUILD, PURPLE CIRCLE WITH NUMBER = @MENTION === */
 
 .badge {
-  background-color: #5f0faf;
+  background-color: var(--mention);
   border-radius: 50%;
 }
 
 .new-messages-indicator.new-messages-indicator-mention {
-  background-color: #5f0faf;
+  background-color: var(--mention);
   border-radius: 0%;
 }
 
@@ -880,6 +908,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   transform: translate(-10px, -49px)!important;
   z-index: 100;
 }
+
 
 
 /* === SCROLL BAR === */
@@ -1034,8 +1063,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   width: 70px;
   height: 70px;
   background-size: 70px 70px;
-  border-radius: 0px;
-  border-radius: 20%;
+  border-radius: var(--profilepictureshape);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -1048,7 +1076,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   width: 40px;
   height: 40px;
   background-size: 40px 40px;
-  border-radius: 20%;
+  border-radius: var(--profilepictureshape);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
