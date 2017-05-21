@@ -1,5 +1,5 @@
 /*
-__  __       _            _       _   _____            _               _____  _                       _
+ __  __       _            _       _   _____            _               _____  _                       _
 |  \/  |     | |          (_)     | | |  __ \          (_)             |  __ \(_)                     | |
 | \  / | __ _| |_ ___ _ __ _  __ _| | | |  | | ___  ___ _  __ _ _ __   | |  | |_ ___  ___ ___  _ __ __| |
 | |\/| |/ _` | __/ _ \ '__| |/ _` | | | |  | |/ _ \/ __| |/ _` | '_ \  | |  | | / __|/ __/ _ \| '__/ _` |
@@ -32,8 +32,8 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 /* === COLOR & ELEMENT VARIABLES === */
 
 :root {
-  --darksecondary: #2d2d2d;
-  --darkprimary: #222222;
+  --darksecondary: rgba(0, 0, 0, 0.3);
+  --darkprimary: rgba(0, 0, 0, 0.3);
   --accent: #C62828;
   --mention: #5f0faf;
   --profilepictureshape: 20%; /* 50% Circle (Default for discord), 20% Rounded Square (Default for theme), 0% Sharp Square  */
@@ -48,6 +48,9 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 * {
   font-family: 'Roboto', sans-serif;
 }
+
+
+
 
 @keyframes bg-color {
   0% {
@@ -70,6 +73,174 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   }
   ;
 }
+
+/* === BORDER IMAGE === */
+
+body {
+  background: url("https://cdna.artstation.com/p/assets/images/images/002/279/268/large/alena-aenami-seaside1920.jpg?1459695047") !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.search-bar, .friends-header, .chat>.title-wrap, .chat>.title-wrap>.title, .theme-dark .chat form,
+.guild-header, .chat .title-wrap .private-channels .channel:active, .guild-channels .channel-text:active,
+.channel-members .member.popout-open, .private-channels .channel.selected, .guild-channels .channel-text.selected,
+.theme-dark .messages-wrapper, .guild-channels, .theme-dark .chat .title-wrap,
+.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper,
+.private-channels, .channel-members, .guilds-wrapper, .channel-members, .channel-textarea, .theme-dark .channel-textarea-inner,
+#friends, .account .btn-group, #friends .friends-table .friends-table-header,
+#friends .friends-table, .flex-horizontal>.flex-spacer, .chat .messages, .guild-header header,
+.friends-table .messages .message-group:not(.has-divider), .messages-wrapper .messages .message-group:not(.has-divider),
+#rtc-connection .btn-group, .account .btn-group, .account .btn-mute, .account .btn-deafen, .account .btn-settings,
+.channel-textarea, .comment, .scroller .guild-channels, .channels-wrap, .theme-dark .layers, .channel-members-wrap,
+.channel-members-wrap .scroller-wrap.fade.dark, .search-bar, .friends-header, .guild-header header, .chat>.title-wrap>.title, .chat .title-wrap,
+.chat .messages-wrapper, .chat .messages-wrapper .scroller-wrap, .chat form .typing:hover, .typing .text, .theme-dark .chat .private-channel-call,
+.theme-dark .layer, .theme-dark .layers, .theme-light .layer, .theme-light .layers {
+  background: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: none;
+  border-bottom: 0px solid #fff;
+  border-top: none;
+  opacity: 1;
+}
+
+.channel-textarea-inner textarea, .chat .title-wrap .topic, .theme-dark .search-results-wrap .search-result .hit {
+  color: rgba(255, 255, 255, 0.8)!important;
+}
+
+.theme-dark .chat > .content > .flex-justify-center {
+  background:transparent;
+}
+
+.ui-flex > .flex-nowrap {
+  background: transparent;
+}
+
+.theme-dark .chat .private-channel-call {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#rtc-connection {
+  background: rgba(0, 0, 0, 0.3);
+  border-top: none;
+}
+
+#rtc-connection .btn, #rtc-connection .btn-group, #rtc-connection .btn-disconnect {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.message-group-blocked {
+  background: rgba(0, 0, 0, 0.5)!important;
+  border-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+.guild-channels .channel-text:hover, .channel-members .member:hover,
+.private-channels .channel:hover, .theme-dark #friends .friends-table .friends-row:hover, .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar,
+.theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb:active, .theme-dark .search-results-wrap .search-result .hit {
+  background: rgba(0, 0, 0, 0.4)!important
+}
+
+.chat form .typing, .channel-textarea, .account, .search-result.expanded .search-result-message:not(.hit), .search-result .search-result-message:not(.hit),
+.theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit, .search-results-wrap,
+.search-results-wrap .search-header {
+  background: rgba(0, 0, 0, 0.3)!important;
+}
+
+.theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb {
+  background: rgba(225, 225, 225, 0.2) !important;
+}
+
+.guild-channels {
+  background: rgba(0, 0, 0, 0.3)!important;
+}
+
+.theme-dark .chat form, .account{
+  background-color: rgba(0,0,0,0.0);
+  box-shadow: none;
+}
+
+
+.theme-dark .ui-standard-sidebar-view .content-region, .theme-dark .ui-standard-sidebar-view, .scroller-wrap, .theme-dark .ui-standard-sidebar-view .sidebar-region,
+.ui-standard-sidebar-view .content-region .scroller-wrap, .theme-dark .ui-standard-sidebar-view .content-region .scroller, .ui-standard-sidebar-view .content-column.default,
+.theme-dark .ui-standard-sidebar-view .content-region {
+  background: transparent;
+}
+.theme-dark .ui-standard-sidebar-view .sidebar-region .scroller, .theme-dark .ui-standard-sidebar-view .content-region .scrollbar, .ui-standard-sidebar-view {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.theme-light .ui-standard-sidebar-view .content-region, .theme-light .ui-standard-sidebar-view, .scroller-wrap, .theme-light .ui-standard-sidebar-view .sidebar-region,
+.ui-standard-sidebar-view .content-region .scroller-wrap, .theme-light .ui-standard-sidebar-view .content-region .scroller, .ui-standard-sidebar-view .content-column.default,
+.theme-light .ui-standard-sidebar-view .content-region {
+  background: transparent;
+}
+.theme-light .ui-tab-bar-item { color: #000; }
+.theme-light .ui-form-title { color: #fff; }
+.theme-light .ui-standard-sidebar-view .sidebar-region .scroller, .theme-light .ui-standard-sidebar-view .content-region .scrollbar, .ui-standard-sidebar-view {
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+
+/* White Theme Support */
+.theme-light .chat form, .theme-light .messages-wrapper, .guild-channels, .theme-light .chat .title-wrap,
+.theme-light .chat>.content, .theme-light .friends-table, .theme-light .messages-wrapper,
+.theme-light .channel-textarea-inner, .theme-light .layers, .channel-members-wrap,
+.theme-light .chat .private-channel-call, .theme-light .layer, .theme-light .layers, .theme-light .layer, .theme-light .layers {
+  background: transparent!important;
+  box-shadow: none;
+  border-bottom: 0px solid #fff;
+  border-top: none;
+  opacity: 1;
+}
+
+.theme-light .search-results-wrap .search-result .hit { color: rgba(255, 255, 255, 0.8)!important; }
+.theme-light .chat .private-channel-call { border-bottom: 1px solid rgba(255, 255, 255, 0.6); }
+.message-group .comment .message-text .markup { color: hsla(0,0%,100%,.7) !important; }
+.channel-members h2 { color: #fff; }
+
+.theme-light #friends .friends-table .friends-row:hover
+.theme-light .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb:active, .theme-light .search-results-wrap .search-result .hit {
+  background: rgba(255, 255, 255, 0.5)!important
+}
+
+.theme-light .search-results-wrap .search-result.expanded .search-result-message.hit {
+  background: rgba(255, 255, 255, 0.2)!important;
+}
+
+.theme-light .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb { background: rgba(225, 225, 225, 0.3) !important; }
+
+/* Had to rework for the new styles */
+.theme-light .chat form, .account{
+  background-color: rgba(0,0,0,0.0);
+  box-shadow: none;
+}
+
+/* Server members loading */
+.theme-dark .channel-members-loading, .theme-dark .channel-members-loading .background,
+.theme-light .channel-members-loading, .theme-light .channel-members-loading .background {
+  background: transparent;
+}
+
+.theme-dark .channel-members-wrap > div,
+.theme-light .channel-members-wrap > div{
+  opacity: 0!important; /* display: none; causes performance issues for me */
+}
+.theme-dark .channel-members-wrap > div:last-child,
+.theme-light .channel-members-wrap > div:last-child{
+  opacity: 1!important;
+}
+
+/* Keyframes */
+@keyframes opacity {
+  0% { opacity: 1; }
+  50% { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+/**/
 
 
 /* === TEXT AREA & AUTOCOMPLETE POPOUT === */
@@ -282,9 +453,9 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   transition: all 0ms
 }
 
-.private-channels, .channel-members {
+/*.private-channels, .channel-members {
   background: #212121!important;
-}
+}*/
 
 .channel-members {
   width: 240px;
@@ -984,9 +1155,9 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   color: var(--accent);
 }
 
-.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper {
+/*.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper {
   background-color: var(--darksecondary) !important;
-}
+}*/
 
 .theme-dark .message-group .comment .markup {
   color: hsla(0, 0%, 100%, .7) !important;
