@@ -7,6 +7,9 @@ broken and I am unsure about square profile pictures amoungst other things,
 
 v1.x is the first version of this theme, there will be errors and unstyled areas, a lot more is to come in the future.
 In this version it allows better customisation, setting a few variables at the top of the css for easy editing.
+
+We also have the theme with background support (v2.0) [File Tree](https://github.com/Oliyy/Material-Design-Discord/tree/soyouwantabackground) [Release](https://github.com/Oliyy/Material-Design-Discord/releases/tag/2.0)
+
 ![alt variables](http://i.imgur.com/i1qhIGY.png)
 
 
