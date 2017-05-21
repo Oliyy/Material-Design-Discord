@@ -10,15 +10,6 @@ In this version it allows better customisation, setting a few variables at the t
 ![alt variables](http://i.imgur.com/i1qhIGY.png)
 
 
-### Change log
-
-+ Added variable to change border-radius for profile pictures,
-
-+ Changed typing animation
-
-+ Theme is now released into beta version 1.
-
-
 ## Credits -
 
 https://github.com/Oliyy - Pretty much all the rest I made, in consultation with others
