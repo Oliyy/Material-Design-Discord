@@ -71,6 +71,36 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
   ;
 }
 
+/* === BORDER WALLPAPER === */
+body {
+  background: url("https://cdna.artstation.com/p/assets/images/images/004/071/192/large/alena-aenami-million-little-pieces-1k.jpg?1480028865") !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.search-bar, .friends-header, .chat>.title-wrap, .chat>.title-wrap>.title, .theme-dark .chat form,
+.guild-header, .chat .title-wrap .private-channels .channel:active, .channel-text:active,
+.channel-members .member.popout-open, .private-channels .channel.selected,  .channel-text.selected,
+.theme-dark .messages-wrapper, .guild-channels, .theme-dark .chat .title-wrap,
+.theme-dark .chat>.content, .theme-dark .friends-table, .theme-dark .messages-wrapper,
+.private-channels, .channel-members, .guilds-wrapper, .channel-members, .channel-textarea, .theme-dark .channel-textarea-inner,
+#friends, .account .btn-group, #friends .friends-table .friends-table-header,
+#friends .friends-table, .flex-horizontal>.flex-spacer, .chat .messages, .guild-header header,
+.friends-table .messages .message-group:not(.has-divider), .messages-wrapper .messages .message-group:not(.has-divider),
+#rtc-connection .btn-group, .account .btn-group, .account .btn-mute, .account .btn-deafen, .account .btn-settings,
+.channel-textarea, .comment, .scroller .guild-channels, .channels-wrap, .theme-dark .layers, .channel-members-wrap,
+.channel-members-wrap .scroller-wrap.fade.dark, .search-bar, .friends-header, .guild-header header, .chat>.title-wrap>.title, .chat .title-wrap,
+.chat .messages-wrapper, .chat .messages-wrapper .scroller-wrap, .chat form .typing:hover, .typing .text, .theme-dark .chat .private-channel-call,
+.theme-dark .layer, .theme-dark .layers, .theme-light .layer, .theme-light .layers {
+  background: transparent !important;
+  box-shadow: none;
+  border-bottom: 0px solid #fff;
+  border-top: none;
+  opacity: 1;
+}
+
 
 /* === TEXT AREA & AUTOCOMPLETE POPOUT === */
 
@@ -656,7 +686,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 /* === TEXT/VOICE CHANNEL SECTION === */
 
 .guild-channels {
-  background-color: var(--darkprimary);
+  background-color: var(--darkprimary)!important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
