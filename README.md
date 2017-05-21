@@ -3,21 +3,10 @@
 An attempt at a Material Design Discord theme using Beautifuldiscord, more material-like updates soon, Private messaging style is currently
 broken and I am unsure about square profile pictures amoungst other things,
 
-## Current Version 1.0 
 
-v1.x B is the first version of this theme, there will be errors and unstyled areas, a lot more is to come in the future.
+v2.x is a seperate version of this theme with a custom wallpaper option, there will be errors and unstyled areas, a lot more is to come in the future.
 In this version it allows better customisation, setting a few variables at the top of the css for easy editing.
 ![alt variables](http://i.imgur.com/i1qhIGY.png)
-
-
-### Change log
-
-+ Added variable to change border-radius for profile pictures,
-
-+ Changed typing animation
-
-+ Theme is now released into beta version 1.
-
 
 ## Credits -
 
