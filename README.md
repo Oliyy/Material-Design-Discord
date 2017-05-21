@@ -10,6 +10,8 @@ In this version it allows better customisation, setting a few variables at the t
 
 We also have the theme with background support (v2.0) [File Tree](https://github.com/Oliyy/Material-Design-Discord/tree/soyouwantabackground) [Release](https://github.com/Oliyy/Material-Design-Discord/releases/tag/2.0)
 
+We also have the theme with border-background support, because I don't know if people like it enough for it to be on the main release (v3.0) [File Tree](https://github.com/Oliyy/Material-Design-Discord/tree/soyouwantabackground) [Release](https://github.com/Oliyy/Material-Design-Discord/releases/tag/2.0)
+
 ![alt variables](http://i.imgur.com/i1qhIGY.png)
 
 
