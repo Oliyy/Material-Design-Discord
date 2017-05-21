@@ -3,9 +3,9 @@
 An attempt at a Material Design Discord theme using Beautifuldiscord, more material-like updates soon, Private messaging style is currently
 broken and I am unsure about square profile pictures amoungst other things,
 
-## Current Version 1.0
+## Current Version 3.0
 
-v1.x is the first version of this theme, there will be errors and unstyled areas, a lot more is to come in the future.
+v3.x is an edited version of 1.x, because I didn't know if people wanted this border wallpaper feature, there will be errors and unstyled areas, a lot more is to come in the future.
 In this version it allows better customisation, setting a few variables at the top of the css for easy editing.
 
 We also have the theme with background support (v2.0) [File Tree](https://github.com/Oliyy/Material-Design-Discord/tree/soyouwantabackground) [Release](https://github.com/Oliyy/Material-Design-Discord/releases/tag/2.0)
