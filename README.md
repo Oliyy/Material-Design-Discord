@@ -9,6 +9,9 @@ v2.x is a seperate version of this theme with a custom wallpaper option, there w
 In this version it allows better customisation, setting a few variables at the top of the css for easy editing.
 ![alt variables](http://i.imgur.com/i1qhIGY.png)
 
+
+**We also have the theme with border-background support, because I don't know if people like it enough for it to be on the main release (v3.x) [File Tree](https://github.com/Oliyy/Material-Design-Discord/tree/soyouwantabackground) [Release](https://github.com/Oliyy/Material-Design-Discord/releases/)**
+
 ## Credits -
 
 https://github.com/Oliyy - Pretty much all the rest I made, in consultation with others
