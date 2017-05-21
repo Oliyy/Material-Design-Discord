@@ -50,7 +50,7 @@ Voice Controls are borked if you have a long name
 
 Main Chat View
 
-![alt preview](http://i.imgur.com/5tWV5y7.png)
+![alt preview](http://i.imgur.com/rfTVaw1.png)
 
 Profile and linked accounts view
 
