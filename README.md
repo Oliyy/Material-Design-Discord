@@ -46,16 +46,8 @@ Voice Controls are borked if you have a long name
 
 Main Chat View
 
-![alt preview](http://i.imgur.com/5tWV5y7.png)
+![alt preview](http://i.imgur.com/LZlEkrB.jpg)
 
 Profile and linked accounts view
 
-![alt preview](http://i.imgur.com/8iYwygc.png)
-
-User popout
-
-![alt preview](http://i.imgur.com/qX1J4aY.png)
-
-Custom Icons
-
-![alt preview](http://i.imgur.com/KvCwgC1.png)
+![alt preview](http://i.imgur.com/6RLZsCD.png)
