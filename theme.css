@@ -72,6 +72,7 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 }
 
 
+
 /* === TEXT AREA & AUTOCOMPLETE POPOUT === */
 
 .channel-textarea-inner, .channel-textarea.has-results .channel-textarea-inner {
@@ -654,6 +655,87 @@ If anyone has a problem with me using their code just PM me on discord Oliy#0330
 
 
 /* === TEXT/VOICE CHANNEL SECTION === */
+
+.container-RYiLUQ {
+  margin-top: -1px;
+  background-color: var(--darkprimary);
+}
+
+.content-2mSKOj, .content-2mSKOj:hover {
+  transition: all 250ms ease;
+}
+
+.content-2mSKOj:hover {
+  background: var(--dark-secondary);
+}
+.contentSelectedText-3j5CXt {
+  background-color: var(--darksecondary);
+  border-radius: 0px 5px 5px 0px;
+}
+
+@-webkit-keyframes current-channel {
+  from { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes current-channel {
+  from { opacity: 0; }
+  100% { opacity: 1; }
+}
+.contentSelectedText-3j5CXt:before {
+  animation: current-channel 300ms ease-in-out;
+}
+
+.contentSelectedText-3j5CXt:before {
+  position: absolute;
+  top: 10;
+  left: 16px;
+  height: 17px;
+  content: " ";
+  border-left: 17px solid var(--accent);
+  opacity: 1!important;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.container-37-TX2 {
+  color: #ccc;
+}
+
+.wrapper-2xO9RX {
+  background-color: var(--accent);
+}
+
+#friends .friends-header {
+  border: none;
+  box-shadow: none;
+  height: 57px;
+}
+
+.theme-dark #friends .friends-header {
+  background-color: var(--darksecondary);
+  border: none;
+}
+
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
+  background-color: var(--accent);
+}
+
+
+.unread-23Kvxk {
+  content: " ";
+  width: 12px;
+  height: 12px;
+  border-radius: 25%;
+  background: #fff;
+  opacity: 1;
+  position: absolute;
+  top: 15px;
+  left: 18px;
+}
+
+
+
 
 .guild-channels {
   background-color: var(--darkprimary);
